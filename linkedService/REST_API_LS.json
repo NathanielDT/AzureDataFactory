@@ -1,0 +1,13 @@
+{
+	"name": "REST_API_LS",
+	"properties": {
+		"description": "Linked Service for the REST API to JSON Placeholder - No AUTH ",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://jsonplaceholder.typicode.com/users",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
