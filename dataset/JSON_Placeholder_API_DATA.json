@@ -1,0 +1,12 @@
+{
+	"name": "JSON_Placeholder_API_DATA",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "REST_API_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
