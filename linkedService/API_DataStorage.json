@@ -1,0 +1,10 @@
+{
+	"name": "API_DataStorage",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://endprojectblob.dfs.core.windows.net/"
+		}
+	}
+}
