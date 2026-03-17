@@ -1,0 +1,9 @@
+{
+	"name": "FactoryPipelines",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d11cd1e6-f62f-4b29-a1ec-150295107a22",
+		"tenantId": "a3ad5169-a966-4698-8696-3eeebd3a39c1"
+	}
+}
