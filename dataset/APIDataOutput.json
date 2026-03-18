@@ -1,5 +1,5 @@
 {
-	"name": "APIData",
+	"name": "APIDataOutput",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "API_DataStorage",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "users.csv",
+				"fileName": "users1.csv",
 				"folderPath": "users",
 				"fileSystem": "apidata"
 			},
