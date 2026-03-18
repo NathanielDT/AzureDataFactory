@@ -99,102 +99,14 @@ The pipeline writes a CSV file to ADLS with the following structure:
 
 ## 🚀 Improvements & Enhancements
 
-### 🔹 1. Parameterisation
+Schema Drift - Data flow
+Output to SQL table
+Mutiple input streams
+Find API with security to set up key vault token
+Meta driven data collection (Api -> SQl Control table -> pipeline trigger ) 
+Improved Error logging 
 
-* Add pipeline parameters for:
 
-  * API endpoint (e.g. `/users`, `/posts`)
-  * Output file name/path
-* Makes pipeline reusable across datasets
-
----
-
-### 🔹 2. Schema Drift & Data Flow
-
-* Introduce Mapping Data Flow to:
-
-  * Handle nested JSON (e.g. address, company)
-  * Enable schema drift for flexible ingestion
-
----
-
-### 🔹 3. Incremental Loads
-
-* Implement watermarking or pagination:
-
-  * Use query parameters if API supports it
-  * Store last load timestamp
-
----
-
-### 🔹 4. Error Handling & Logging
-
-* Add:
-
-  * Retry policies on Copy Activity
-  * Failure paths with alerts
-* Integrate with:
-
-  * Azure Monitor / Log Analytics
-
----
-
-### 🔹 5. Secure Configuration
-
-* Store secrets in Azure Key Vault
-* Use Managed Identity for authentication
-* Avoid hardcoding credentials
-
----
-
-### 🔹 6. Data Partitioning
-
-* Store output using a dynamic folder structure:
-
-  ```
-  /users/year=YYYY/month=MM/day=DD/
-  ```
-* Improves query performance and organisation
-
----
-
-### 🔹 7. CI/CD Integration
-
-* Use ARM templates or Bicep for deployment
-* Integrate with GitHub Actions or Azure DevOps pipelines
-
----
-
-### 🔹 8. Metadata-Driven Framework
-
-* Store ingestion configs in a control table
-* Dynamically drive pipelines based on metadata
-* Scales to multiple APIs and datasets
-
----
-
-### 🔹 9. Data Validation
-
-* Add validation checks:
-
-  * Row counts
-  * Schema validation
-* Use Stored Procedures or Data Flows
-
----
-
-### 🔹 10. Format Optimisation
-
-* Convert CSV → Parquet
-
-  * Better compression
-  * Faster analytics performance
-
----
-
-##  Next Steps
-
-Schema Drift
 
 ## 👤 Author
 
